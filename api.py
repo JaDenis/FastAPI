@@ -35,7 +35,7 @@ async def websocket_endpoint(websocket: WebSocket, client_id: id):
             await manager.broadcast(f"Client #{client_id} sent: {data}")
     except WebSocketDisconnect:
         manager.disconnect(websocket)
-        await manager.broadcast(f"Client #{client_id} has left")
+        await manager.broadcast(f"Client #{client_id} has left.")
 
 
 
