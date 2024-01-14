@@ -17,14 +17,7 @@ async def dark_swagger_ui():
         openapi_url=app.openapi_url,
         title=f"{app.title} - Fast UI", 
         swagger_ui_parameters={"syntaxHighlight.theme": "arta", "defaultModelsExpandDepth": -1, "persistAuthorization": True}, # monokai arta
-        swagger_css_url = "https://cdn.jsdelivr.net/gh/Madrobotz/Fastapi-Swagger-UI-Dark/assets/swagger_ui_dark.min.css"
+        swagger_css_url = "https://cdn.jsdelivr.net/gh/Madrobotz/Fastapi-Swagger-UI-Dark2/assets/swagger_ui_dark.min.css"
     )
 
     # For more swagger_ui_parameters visit: https://springdoc.org/properties.html#_swagger_ui_properties
-
-    # TODO: Edit css for components and host css on a new github account to fork from there
-    # loading animation
-    # button.opblock-control-arrow
-    # .copy-to-clipboard button
-    # select.content-type
-    # input
