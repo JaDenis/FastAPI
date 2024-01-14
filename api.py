@@ -17,5 +17,5 @@ async def custom_swagger_ui_html_github():
     return get_swagger_ui_html(
         openapi_url=app.openapi_url,
         title=f"{app.title} - Fast UI",
-        swagger_css_url = "https://cdn.jsdelivr.net/gh/JaDenis/Fastapi-Swagger-UI-Dark/assets/swagger_ui_dark.css"
+        swagger_css_url = "https://cdn.jsdelivr.net/gh/JaDenis/Fastapi-Swagger-UI-Dark/assets/swagger_ui_dark.min.css"
     )
