@@ -18,7 +18,7 @@ async def custom_swagger_ui_html_github():
         openapi_url=app.openapi_url,
         title=f"{app.title} - Fast UI", 
         swagger_ui_parameters={"syntaxHighlight.theme": "arta", "defaultModelsExpandDepth": -1, "persistAuthorization": True}, # monokai arta
-        swagger_css_url = "https://cdn.jsdelivr.net/gh/JaDenis/Fastapi-Swagger-UI-Dark/main/assets/swagger_ui_dark.min.css"
+        swagger_css_url = "https://cdn.jsdelivr.net/gh/JaDenis/Fastapi-Swagger-UI-Dark/assets/swagger_ui_dark.min.css"
     )
     # loading animation
     # button.opblock-control-arrow
