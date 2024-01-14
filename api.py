@@ -11,10 +11,11 @@ async def index():
 async def create_agent(agent: str):
     return {"message": agent}
 
-@app.get("/docs", include_in_schema=False)
+@app.get("/docs2", include_in_schema=False)
 async def custom_swagger_ui_html_github():
+    print("lol kek")
     return get_swagger_ui_html(
-        openapi_url = app.openapi_url,
-        title=f"{app.title} - Swagger UI",
-        swagger_css_url = "https://raw.githubusercontent.com/JaDenis/Fastapi-Swagger-UI-Dark/main/assets/swagger_ui_dark.min.css"
+        openapi_url=app.openapi_url,
+        title=f"{app.title} - Fast UI",
+        swagger_css_url = "https://cdn.jsdelivr.net/gh/JaDenis/Fastapi-Swagger-UI-Dark/assets/swagger_ui_dark.css"
     )
