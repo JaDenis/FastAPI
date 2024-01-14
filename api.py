@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 async def index():
-    return {"message": "Hello, Vercel!"}
+    return {"message": "Hello, Replit!"}
 
 @app.get("/agents/")
 async def create_agent(agent: str):
