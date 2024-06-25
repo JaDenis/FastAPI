@@ -132,8 +132,9 @@ This concludes the technical specification document for the AI agents video game
 
     for message in response:
         print(message, flush = True, end ='')
+        messages.append(message)
 
-    return {"g4f stream": "stream"}
+    return {"g4f stream": messages}
 
 @app.post("/task/create")
 async def create_task(task: str):
